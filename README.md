@@ -20,12 +20,18 @@
 </p>
 
 
+## Notes
+
+*Currently a WIP* not ready for consumption
+
 ## Getting Started
 
 1. Install Vapor CLI [https://docs.vapor.codes/3.0/install/macos/](https://docs.vapor.codes/3.0/install/macos/)
 1. `git clone git@github.com:mschmulen/appAnalyticsServer.git`
 1. `cd appAnalyticsServer`
-1. `swift build; swift run`
+1. vapor build
+1. vapor run
+1. or with xcode user `vapor xcode`
 1. `open http://localhost:8080/devices`
 
 Local endpoints:
@@ -89,26 +95,7 @@ reference doc: https://dev.to/leogdion/a-vapor-guide-setup-and-deployment-with-h
 https://forums.raywenderlich.com/t/server-side-swift-with-vapor-deploying-to-heroku-ray-wenderlich/22692/3
 
 
-
-## TODO 
-
-Phase 1:
-
-- [] Rename `MobileAnalyticsServer`
-- [] deploy to heroku with 
-- [] 
-- [] 
-- [] 
-
-Phase 2:
-
-- [] convert to PostgreSQL
-- [] 
-- [] 
-
-
-
-## Curl Commands
+### Misc Curl Commands
 
 ```
 curl http://localhost:8080/devices
@@ -125,7 +112,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"title": "example"}' http:
 ```
 
 
-## Misc notes 
+### Misc notes 
 
 Upgrading vapor Toolbox : `brew upgrade vapor` or possibly `vapor self update`
 
