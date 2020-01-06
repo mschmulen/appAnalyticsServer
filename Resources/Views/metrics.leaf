@@ -1,0 +1,127 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Metrics</title>
+</head>
+
+<body>
+
+<h1>App Metrics</h1>
+
+<h3> time span: #(timeSpan) </h3>
+<h3> fromTimeString: #(fromTimeString) </h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>activeApps</td>
+        <td>#(activeAppCount)</td>
+      </tr>
+      <tr>
+        <td>activeDevices</td>
+        <td>#(activeDeviceCount)</td>
+      </tr>
+      <tr>
+        <td>events</td>
+        <td>#(activeEventCount)</td>
+      </tr>
+      <tr>
+        <td>crashEvents</td>
+        <td>#(activeCrashCount)</td>
+      </tr>
+  </tbody>
+</table>
+
+<h3>Active Builds:</h3>
+<ul>
+#for(appVersion in appVersionList) {
+    <li>#(appVersion)</li>
+}
+</ul>
+
+
+<h3>Total Event Count:</h3>
+<table>
+  <thead>
+    <tr>
+      <th> Date </th>
+      <th> Count </th>
+    </tr>
+  </thead>
+    <tbody>
+      #for(metric in dailyEvents) {
+          <tr>
+            <td>Nov-9</td>
+            <td>#(metric)</td>
+          </tr>
+      }
+  </tbody>
+</table>
+
+<h3>Total Crash Count:</h3>
+<table>
+  <thead>
+    <tr>
+      <th> Date </th>
+      <th> Count </th>
+    </tr>
+  </thead>
+    <tbody>
+      #for(metric in dailyCrashs) {
+          <tr>
+            <td>Nov-9</td>
+            <td>#(metric)</td>
+          </tr>
+      }
+  </tbody>
+</table>
+
+<h3>Daily Active Devices:</h3>
+<table>
+  <thead>
+    <tr>
+      <th> Date </th>
+      <th> Count </th>
+    </tr>
+  </thead>
+  <tbody>
+      #for(metric in dailyActiveDevices) {
+          <tr>
+            <td>Nov-9</td>
+            <td>#(metric)</td>
+          </tr>
+      }
+  </tbody>
+</table>
+
+
+<h3>Daily New Devices:</h3>
+<table>
+  <thead>
+    <tr>
+      <th> Date </th>
+      <th> Count </th>
+    </tr>
+  </thead>
+    <tbody>
+      #for(metric in dailyNewDevices) {
+          <tr>
+            <td>Nov-9</td>
+            <td>#(metric)</td>
+          </tr>
+      }
+  </tbody>
+</table>
+
+
+
+
+</body>
+</html>
