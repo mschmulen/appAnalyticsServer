@@ -37,11 +37,6 @@ Companion framework can be found at: [https://github.com/mschmulen/appAnalytics-
 `git clone git@github.com:mschmulen/appAnalytics-iOS.git`
 
 
-## Address already in use
-
-`sudo lsof -i :8080`
-`kill 50111`
-
 ## Huroku deployment
 
 1. Install heoku cli: `brew tap heroku/brew && brew install heroku`
@@ -90,6 +85,10 @@ Post to events:
 curl -X POST -H "Content-Type: application/json" -d '{"title": "example"}' http://localhost:8080/events
 ```
 
+## Address already in use 
+
+`sudo lsof -i :8080`
+`kill 50111`
 
 ### Misc notes 
 
